@@ -29,15 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={clsx("m-10")}
+        className=""
       >
         <nav>
           <Navigation />
         </nav>
-        <aside>
-          <Sidebar />
-        </aside>
-        <main>
+        <main className="flex flex-row ">
+          <aside className="w-32 h-full">
+            <Sidebar />
+          </aside>
           {children}
         </main>
       </body>
