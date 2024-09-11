@@ -9,6 +9,7 @@ export function Navigation() {
         <NavItem name="Home" />
         <NavItem name="About" />
         <NavItem name="Funny stuff" />
+        <NavItem name="My Links" dist="mylinks"/>
       </div>
     </div>
   )
@@ -21,10 +22,15 @@ type NavItemsProps = {
 function NavItem({ name, dist }: NavItemsProps) {
 
   const router = useRouter()
-  function handleClick() { }
+  function handleClick() { 
+    router.push(
+      dist??""
+    )
+   }
 
   return (
     <a
+      onClick={handleClick}
       className="bg-yellow-40 border-2 border red-500 text-red-500 hover:animate-bounce hover:animate-recoloring"
     >
       {name}
