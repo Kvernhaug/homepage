@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
-import { clsx } from "clsx";
 import { Sidebar } from "@/components/sidebar";
 
 const geistSans = localFont({
@@ -30,11 +29,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className=""
+        style={{
+          backgroundImage: `url(/images/bg.png)`
+        }}
       >
         <nav>
           <Navigation />
         </nav>
-        <main className="flex flex-row ">
+        <main className="flex flex-row mx-40">
           <aside className="w-32 h-full">
             <Sidebar />
           </aside>
