@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        recolor: {
+          "0%": { background: "red" },
+          "33%": { background: "yellow" },
+          "66%": { background: "green" },
+          "100%": { background: "blue" },
+        }
+      },
+      animation: {
+        recoloring: "recolor 1s linear infinite",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
