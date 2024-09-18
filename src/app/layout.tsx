@@ -30,7 +30,8 @@ export default function RootLayout({
       <body
         className=""
         style={{
-          backgroundImage: `url(/images/bg.png)`
+          backgroundImage: `url(/images/bricks.png)`,
+          backgroundSize: '50%'
         }}
       >
         <nav>
