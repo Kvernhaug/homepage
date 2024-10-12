@@ -36,14 +36,14 @@ export default function RootLayout({
           backgroundPosition: 'center center',
         }}
       >
-        <div
+        <div // Center background banner
           style={{
-            backgroundColor: 'white', // White background for the banner
-            width: '80%', // 80% of the screen width
-            margin: '0px auto', // Center the banner horizontally and add top margin
-            padding: '0px', // Padding inside the banner
-            borderRadius: '0px', // Optional: rounded corners
-            boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)', // Optional: add shadow for better design
+            backgroundColor: 'white',
+            width: '70%',
+            margin: '0px auto',
+            padding: '0px',
+            borderRadius: '0px', 
+            boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)', 
             minHeight: '100vh',
             flex: 1,
             display: 'flex',
