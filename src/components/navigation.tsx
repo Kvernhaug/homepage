@@ -4,12 +4,13 @@ import { useRouter } from "next/navigation"
 export function Navigation() {
 
   return (
-    <div className="text-lg w-full justify-center bg-lime-200 m-auto">
+    <div className="text-2xl w-full justify-center m-auto">
       <div className="flex flex-row gap-2 m-auto w-fit">
         <NavItem name="Home" dist="/"/>
         <NavItem name="About" />
-        <NavItem name="Funny stuff" />
+        <NavItem name="My stuff" dist="myStuff"/>
         <NavItem name="My Links" dist="mylinks"/>
+        <NavItem name="Options" dist="options"/>
       </div>
     </div>
   )
@@ -29,7 +30,7 @@ function NavItem({ name, dist }: NavItemsProps) {
   return (
     <a
       onClick={handleClick}
-      className="bg-yellow-40 border-2 border red-500 text-red-500 hover:animate-bounce hover:animate-recoloring cursor-pointer"
+      className="text-orange-600 rounded-full p-2 m-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
     >
       {name}
     </a>

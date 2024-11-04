@@ -11,9 +11,12 @@ const config: Config = {
       keyframes: {
         recolor: {
           "0%": { background: "red" },
-          "33%": { background: "yellow" },
-          "66%": { background: "green" },
-          "100%": { background: "blue" },
+          "16.7%": { background: "orange" },
+          "33.4%": { background: "yellow" },
+          "50.1%": { background: "green" },
+          "66.8%": { background: "blue" },
+          "83.5%": { background: "indigo" },
+          "100%": { background: "violet" },
         }
       },
       animation: {
@@ -22,6 +25,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      backgroundImage: {
+        'autumn': "url('/images/bg-autumn.jpeg')",
+        'winter': "",
       },
     },
   },

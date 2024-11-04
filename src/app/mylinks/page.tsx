@@ -5,17 +5,17 @@ export default function MyLinks() {
     {
       name: "GitHub",
       url: "https://github.com/Kvernhaug",
-      logo: "/images/GitHub_Logo.png", // Path to the GitHub logo image
+      logo: "/images/GitHub_Logo.png",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/kvernhaug/",
-      logo: "/images/LinkedIn-Blue.png", // Path to the LinkedIn logo image
+      logo: "/images/LinkedIn-Blue.png",
     },
     {
       name: "YouTube",
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      logo: "/images/yt_logo_rgb_light.png", // Path to the Twitter logo image
+      logo: "/images/yt_logo_rgb_light.png",
     },
     {
       name: "OnlyFans",
@@ -26,14 +26,7 @@ export default function MyLinks() {
 
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column', // Stack logos vertically
-        justifyContent: 'center',
-        alignItems: 'center', // Center logos horizontally
-        minHeight: '100vh', // Full height of the viewport
-        backgroundColor: '#f5f5f5', // Light background to contrast logos
-      }}
+      className="flex flex-col items-center justify-center bg-[#F5F5F5] min-h-100vh max-h-100vh"
     >
       {links.map((link) => (
         <a
@@ -51,9 +44,6 @@ export default function MyLinks() {
           <img
             src={link.logo}
             alt={`${link.name} logo`}
-            style={{
-              display: 'block', // Make sure the logo is treated as a block element
-            }}
           />
         </a>
       ))}
