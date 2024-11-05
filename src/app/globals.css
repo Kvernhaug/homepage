@@ -4,19 +4,32 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --text-color: theme('colors.text.autumn');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.autumn {
+  --background: #ffffff;
+  --foreground: #000000;
+  --text-color: #ea580c;
 }
+
+.winter {
+  --background: #ffffff;
+  --foreground: #000000;
+  --text-color: #0ea5e9;
+}
+
+.spring {
+  --background: #ffffff;
+  --foreground: #000000;
+  --text-color: #65a30d;
+}
+
 
 body {
-  color: var(--foreground);
   background: var(--background);
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 
