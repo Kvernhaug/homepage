@@ -26,7 +26,7 @@ export default function MyLinks() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center bg-[#F5F5F5] min-h-100vh max-h-100vh"
+      className="flex flex-col items-center justify-center"
     >
       {links.map((link) => (
         <a
