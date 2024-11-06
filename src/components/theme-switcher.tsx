@@ -1,24 +1,22 @@
 'use client'
 
-import { useTheme } from 'next-themes'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+
+const changeTheme = (theme: string) => {
+    document.querySelector("html")?.setAttribute("data-theme", theme);
+}
 
 export default function ThemeSwitcher() {
-    const [mounted, setMounted] = useState(false)
-    const { theme, setTheme } = useTheme()
-
-    useEffect(() => setMounted(true), [])
 
     return (
         <div>
-        <p>Current theme: {theme}</p>
-        <button onClick={() => setTheme('autumn')}>Autumn</button>
+        <button onClick={() => changeTheme('autumn')}>Autumn</button>
         <br />
-        <button onClick={() => setTheme('winter')}>Winter</button>
+        <button onClick={() => changeTheme('winter')}>Winter</button>
         <br />
-        <button onClick={() => setTheme('spring')}>Spring</button>
+        <button onClick={() => changeTheme('spring')}>Spring</button>
         <br />
-        <button onClick={() => setTheme('system')}>System Theme</button> {/* Automatically follows system theme */}
+        <button onClick={() => changeTheme('summer')}>Summer</button>
         </div>
-    );
+    )
 }

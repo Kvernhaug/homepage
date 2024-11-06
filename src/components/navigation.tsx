@@ -6,7 +6,7 @@ export function Navigation() {
   return (
     <div className="flex flex-row text-2xl justify-around m-auto w-full">
       <NavItem name="Home" dist="/"/>
-      <NavItem name="About" />
+      <NavItem name="About" dist="about"/>
       <NavItem name="My stuff" dist="myStuff"/>
       <NavItem name="My Links" dist="mylinks"/>
       <NavItem name="Options" dist="options"/>
@@ -28,7 +28,7 @@ function NavItem({ name, dist }: NavItemsProps) {
   return (
     <a
       onClick={handleClick}
-      className="rounded-full p-2 m-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
+      className="text-season rounded-full p-2 m-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
     >
       {name}
     </a>

@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
-  --text-color: theme('colors.text.autumn');
+  --text-color: #000000;
 }
 
 .autumn {
@@ -26,10 +26,28 @@
   --text-color: #65a30d;
 }
 
+@layer base {
+  html {
+    --text-season: #000000;
+  }
+  html[data-theme='autumn'] {
+    --color-season: #ea580c;
+  }
+  html[data-theme='winter'] {
+    --color-season: #0ea5e9;
+  }
+  html[data-theme='spring'] {
+    --color-season: #65a30d;
+  }
+  html[data-theme='summer'] {
+    --color-season: #eab308;
+  }
+}
+
 
 body {
   background: var(--background);
-  color: var(--text-color);
+  color: var(--color-season);
   font-family: Arial, Helvetica, sans-serif;
 }
 

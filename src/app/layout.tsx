@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Sidebar } from "@/components/sidebar";
-import { Providers } from "@/components/providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,23 +28,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>  
       <body>
-        <Providers>
-          <div className="flex items-center flex-col bg-autumn bg-cover w-screen h-screen">
-            <div className="flex w-1/2 h-1/5"></div>
-            <div // Center background banner (orange)
-              className="flex flex-col bg-neutral-300 bg-opacity-70 w-2/3 h-screen rounded-t-2xl"
-            >
-              <nav className="">
-                <Navigation />
-              </nav>
-              <main className="flex flex-row">
-                <div className="flex-1">
-                  {children}
-                </div>
-              </main>
-            </div>
+        <div className="flex items-center flex-col bg-autumn bg-cover w-screen h-screen">
+          <div className="flex w-1/2 h-1/5"></div>
+          <div // Center background banner (orange)
+            className="flex flex-col bg-neutral-300 bg-opacity-70 w-2/3 h-screen rounded-t-2xl"
+          >
+            <nav className="">
+              <Navigation />
+            </nav>
+            <main className="flex flex-row">
+              <div className="flex-1">
+                {children}
+              </div>
+            </main>
           </div>
-        </Providers>
+        </div>
       </body>
     </html >
   );

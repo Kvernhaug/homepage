@@ -26,10 +26,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        text: {
-          autumn: 'orange-600',
-          winter: 'blue-600',
-        }
+        text: "var(--text-color)",
+        season: "var(--color-season)",
       },
       backgroundImage: {
         'autumn': "url('/images/bg-autumn.jpeg')",
