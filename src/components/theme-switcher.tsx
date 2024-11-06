@@ -1,10 +1,7 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
-
-const changeTheme = (theme: string) => {
-    document.querySelector("html")?.setAttribute("data-theme", theme);
-}
+import React from 'react';
+import { changeTheme } from '../utils/helpers'
 
 export default function ThemeSwitcher() {
 
