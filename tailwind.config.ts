@@ -36,7 +36,5 @@ const config: Config = {
     },
   },
   plugins: [],
-  autumn: 'class',
-  winter: 'class',
 };
 export default config;

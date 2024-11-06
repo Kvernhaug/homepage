@@ -47,7 +47,7 @@ export default function RootLayout({
       <body>
         <div className="flex items-center flex-col bg-cover w-screen h-screen">
           <div className="flex w-1/2 h-1/5"></div>
-          <div // Center transparent background banner
+          <div // Center transparent banner
             className="flex flex-col bg-neutral-300 bg-opacity-70 w-2/3 h-4/5 rounded-t-2xl overflow-auto"
           >
             <nav className="">
