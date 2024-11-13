@@ -48,12 +48,12 @@ export default function RootLayout({
         <div className="flex items-center flex-col bg-cover w-screen h-screen">
           <div className="flex w-1/2 h-1/5"></div>
           <div // Center transparent banner
-            className="flex flex-col bg-neutral-300 bg-opacity-70 w-2/3 h-4/5 rounded-t-2xl overflow-auto"
+            className="flex flex-col bg-neutral-300 bg-opacity-70 w-2/3 h-4/5 rounded-t-2xl"
           >
             <nav className="">
               <Navigation />
             </nav>
-            <main className="flex flex-row">
+            <main className="flex flex-row overflow-auto scrollbar">
               <div className="flex-1">
                 {children}
               </div>

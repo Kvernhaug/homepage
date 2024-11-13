@@ -9,20 +9,35 @@
     --background-image: url('/images/bricks.png');
   }
   html[data-theme='autumn'] {
-    --color-season: #ea580c;
+    --color-season: rgba(234, 88, 12, 1);
+    --color-season-transparent: rgba(234, 88, 12, 0.5);
     --background-image: url('/images/bg-autumn.png');
   }
   html[data-theme='winter'] {
-    --color-season: #0ea5e9;
+    --color-season: rgba(14, 165, 233, 1);
+    --color-season-transparent: rgba(14, 165, 233, 0.5);
     --background-image: url('/images/bg-winter.png');
   }
   html[data-theme='spring'] {
-    --color-season: #65a30d;
+    --color-season: rgba(101, 163, 13, 1);
+    --color-season-transparent: rgba(101, 163, 13, 0.5);
     --background-image: url('/images/bg-spring.png');
   }
   html[data-theme='summer'] {
-    --color-season: #eab308;
+    --color-season: rgba(234, 179, 8, 1);
+    --color-season-transparent: rgba(234, 179, 8, 0.5);
     --background-image: url('/images/bg-summer.png');
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 100vh;
+    background: var(--color-season-transparent);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-season);
   }
 }
 
