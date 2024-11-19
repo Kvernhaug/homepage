@@ -11,22 +11,22 @@
   html[data-theme='autumn'] {
     --color-season: rgba(234, 88, 12, 1);
     --color-season-transparent: rgba(234, 88, 12, 0.5);
-    --background-image: url('/images/bg-autumn.png');
+    --background-image: url('/images/pxAutumn.png');
   }
   html[data-theme='winter'] {
     --color-season: rgba(14, 165, 233, 1);
     --color-season-transparent: rgba(14, 165, 233, 0.5);
-    --background-image: url('/images/bg-winter.png');
+    --background-image: url('/images/pxWinter.png');
   }
   html[data-theme='spring'] {
     --color-season: rgba(101, 163, 13, 1);
     --color-season-transparent: rgba(101, 163, 13, 0.5);
-    --background-image: url('/images/bg-spring.png');
+    --background-image: url('/images/pxSpring.png');
   }
   html[data-theme='summer'] {
     --color-season: rgba(234, 179, 8, 1);
     --color-season-transparent: rgba(234, 179, 8, 0.5);
-    --background-image: url('/images/bg-summer.png');
+    --background-image: url('/images/pxSummer.png');
   }
 }
 
