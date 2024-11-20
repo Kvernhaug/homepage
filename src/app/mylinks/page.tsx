@@ -5,22 +5,17 @@ export default function MyLinks() {
     {
       name: "GitHub",
       url: "https://github.com/Kvernhaug",
-      logo: "/images/GitHub_Logo.png",
+      logo: "/images/logos/GitHub_Logo.png",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/kvernhaug/",
-      logo: "/images/LinkedIn-Blue.png",
-    },
-    {
-      name: "YouTube",
-      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      logo: "/images/yt_logo_rgb_light.png",
+      logo: "/images/logos/LinkedIn-Blue.png",
     },
     {
       name: "OnlyFans",
       url: "https://revivecounseling.org/porn-addiction",
-      logo: "/images/OnlyFans_Logo_Full_Blue.png",
+      logo: "/images/logos/OnlyFans_Logo_Full_Blue.png",
     },
   ];
 
