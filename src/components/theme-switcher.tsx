@@ -6,22 +6,6 @@ import { changeTheme, getTheme } from '../utils/helpers';
 import SnowEffect from '@/utils/snow';
 
 export default function ThemeSwitcher() {
-  const [theme, setTheme] = useState<string | null>(getTheme());
-
-  // Update theme state when the theme changes
-  useEffect(() => {
-    const updateTheme = () => {
-      const currentTheme = getTheme();
-      setTheme(currentTheme);
-    };
-
-    // Listen for theme changes
-    window.addEventListener('themeChange', updateTheme);
-
-    // Cleanup event listener
-    return () => window.removeEventListener('themeChange', updateTheme);
-  }, []);
-
   return (
     <div>
       <div>
@@ -38,7 +22,6 @@ export default function ThemeSwitcher() {
           <Image src={'/images/theme-icons/winter.png'} alt="Winter Icon" width={80} height={80} />
         </button>
       </div>
-      {theme === 'winter' && <SnowEffect />}
     </div>
   );
 }
