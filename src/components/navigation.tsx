@@ -1,4 +1,6 @@
 "use client";
+import { getTheme } from "@/utils/helpers";
+import SnowEffect from "@/utils/snow";
 import { useRouter } from "next/navigation";
 
 export function Navigation() {
@@ -22,12 +24,14 @@ function NavItem({ name, dist }: NavItemsProps) {
   function handleClick() {
     router.push(dist ?? "");
   }
+  const theme = getTheme();
 
   return (
     <a
       onClick={handleClick}
       className="text-season rounded-full p-2 m-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
     >
+      {theme === 'winter' && <SnowEffect />}
       {name}
     </a>
   );
