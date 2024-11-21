@@ -8,22 +8,22 @@
     --text-season: #000000;
     --background-image: url('/images/backgrounds/bricks.png');
   }
-  html[data-theme='autumn'] {
+  html[season-theme='autumn'] {
     --color-season: rgba(234, 88, 12, 1);
     --color-season-transparent: rgba(234, 88, 12, 0.5);
     --background-image: url('/images/backgrounds/bg-autumn.jpg');
   }
-  html[data-theme='winter'] {
+  html[season-theme='winter'] {
     --color-season: rgba(14, 165, 233, 1);
     --color-season-transparent: rgba(14, 165, 233, 0.5);
     --background-image: url('/images/backgrounds/tveitevannet-winter.jpg');
   }
-  html[data-theme='spring'] {
+  html[season-theme='spring'] {
     --color-season: rgba(101, 163, 13, 1);
     --color-season-transparent: rgba(101, 163, 13, 0.5);
     --background-image: url('/images/backgrounds/bg-spring.jpg');
   }
-  html[data-theme='summer'] {
+  html[season-theme='summer'] {
     --color-season: rgba(234, 179, 8, 1);
     --color-season-transparent: rgba(234, 179, 8, 0.5);
     --background-image: url('/images/backgrounds/bg-summer.jpg');

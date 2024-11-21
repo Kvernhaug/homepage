@@ -43,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme={getSeasonalTheme()} suppressHydrationWarning>  
+    <html lang="en" season-theme={getSeasonalTheme()} suppressHydrationWarning>  
       <body>
         <div className="flex items-center flex-col bg-cover w-screen h-screen">
           <div className="flex w-1/2 h-1/5"></div>
