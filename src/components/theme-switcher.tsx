@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { changeTheme, getTheme } from '../utils/helpers';
-import SnowEffect from '@/utils/snow';
 
 export default function ThemeSwitcher() {
   return (

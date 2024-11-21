@@ -10,5 +10,8 @@ export const changeTheme = (theme: string) => {
 }
 
 export const getTheme = (): string | null => {
-  return document.documentElement.getAttribute('data-theme');
+  if (typeof document !== 'undefined') {
+    return document.documentElement.getAttribute('data-theme');
+  }
+  return null;
 }
