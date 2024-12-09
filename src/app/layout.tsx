@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import React, { useEffect } from 'react';
-import { Navigation } from "@/components/navigation";
+import { Navigation } from "@/components/radix-navigation";
 import { Sidebar } from "@/components/sidebar";
 
 const geistSans = localFont({
@@ -46,13 +46,13 @@ export default function RootLayout({
     <html lang="en" season-theme={getSeasonalTheme()} suppressHydrationWarning>  
       <body>
         <div className="flex items-center flex-col bg-cover w-screen h-screen">
-          <div className="flex w-1/2 h-1/5"></div>
+          <nav className="flex bg-neutral-200 bg-opacity-70 h-11">
+            <Navigation />  
+          </nav>
           <div // Center transparent banner
-            className="flex flex-col bg-neutral-300 bg-opacity-70 w-2/3 h-4/5 rounded-t-2xl"
+            className="flex flex-col bg-neutral-200 bg-opacity-70 m-10 p-10 w-2/3 rounded-2xl"
           >
-            <nav className="">
-              <Navigation />
-            </nav>
+            
             <main className="flex flex-row overflow-auto scrollbar">
               <div className="flex-1">
                 {children}
