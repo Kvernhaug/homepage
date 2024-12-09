@@ -4,6 +4,7 @@ import "./globals.css";
 import React, { useEffect } from "react";
 import { Navigation } from "@/components/radix-navigation";
 import { Sidebar } from "@/components/sidebar";
+import { WeatherMachine } from "@/components/weather-machine";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -48,6 +49,7 @@ export default function RootLayout({
           <Navigation />
         </nav>
         <div className="flex items-center flex-col bg-cover w-screen h-screen">
+          <WeatherMachine />
           <div // Center transparent banner
             className="flex flex-col bg-neutral-200 bg-opacity-70 mt-20 p-10 w-2/3 rounded-2xl"
           >
