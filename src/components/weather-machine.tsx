@@ -3,6 +3,12 @@ import { getTheme } from "@/utils/helpers";
 import SnowEffect from "@/utils/snow";
 import { useEffect, useState } from "react";
 
+/**
+ * This function is for displaying a weather effect (e.g. snow)
+ * on top of the webpage content
+ * 
+ * @returns weather effect diplayed on screen
+ */
 export function WeatherMachine() {
   const [theme, setTheme] = useState<string | null>(getTheme());
 

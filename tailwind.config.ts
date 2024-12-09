@@ -29,10 +29,6 @@ const config: Config = {
         text: "var(--text-color)",
         season: "var(--color-season)",
       },
-      backgroundImage: {
-        'autumn': "url('/images/bg-autumn.jpeg')",
-        'winter': "url('/images/bg-autumn.jpeg')",
-      },
     },
   },
   plugins: [
