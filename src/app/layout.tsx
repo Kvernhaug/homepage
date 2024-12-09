@@ -46,11 +46,11 @@ export default function RootLayout({
     <html lang="en" season-theme={getSeasonalTheme()} suppressHydrationWarning>  
       <body>
         <div className="flex items-center flex-col bg-cover w-screen h-screen">
-          <nav className="flex bg-neutral-200 bg-opacity-70 h-11">
+          <nav className="fixed flex bg-season bg-opacity-100 h-11">
             <Navigation />  
           </nav>
           <div // Center transparent banner
-            className="flex flex-col bg-neutral-200 bg-opacity-70 m-10 p-10 w-2/3 rounded-2xl"
+            className="flex flex-col bg-neutral-200 bg-opacity-70 mt-20 p-10 w-2/3 rounded-2xl"
           >
             
             <main className="flex flex-row overflow-auto scrollbar">

@@ -67,7 +67,7 @@ type NavItemsProps = {
     return (
       <a
         onClick={handleClick}
-        className="text-season p-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
+        className="text-white p-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
       >
         {name}
       </a>
