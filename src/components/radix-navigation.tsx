@@ -67,7 +67,7 @@ type NavItemsProps = {
     return (
       <a
         onClick={handleClick}
-        className="text-white p-2 hover:animate-bounce hover:animate-recoloring cursor-pointer"
+        className="text-white p-2 hover:bg-slate-600 hover:bg-opacity-30 cursor-pointer"
       >
         {name}
       </a>
