@@ -21,7 +21,7 @@ const config: Config = {
         }
       },
       animation: {
-        recoloring: "recolor 1s linear infinite",
+        recoloring: "recolor 3s linear infinite",
       },
       colors: {
         background: "var(--background)",

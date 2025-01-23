@@ -44,14 +44,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" season-theme={getSeasonalTheme()} suppressHydrationWarning>
-      <body>
-        <nav className="fixed flex bg-season bg-opacity-100 h-11">
-          <Navigation />
-        </nav>
-        <div className="flex items-center flex-col bg-cover w-screen h-screen">
+      <body className="bg-cover bg-fixed">
+        <div className="flex items-center flex-col w-full h-full">
+          <nav className="fixed flex bg-season bg-opacity-100 h-11">
+            <Navigation />
+          </nav>
           <WeatherMachine />
           <div // Center transparent banner
-            className="flex flex-col bg-neutral-200 bg-opacity-70 mt-20 w-2/3 rounded-2xl"
+            className="flex flex-col bg-neutral-200 bg-opacity-70 mt-20 p-10 w-2/3 rounded-2xl"
           >
             <main className="flex flex-row overflow-auto scrollbar">
               <div className="flex-1">{children}</div>
