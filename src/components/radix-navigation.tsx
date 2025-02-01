@@ -45,7 +45,7 @@ function NavItem({ name, dist }: NavItemsProps) {
   return (
     <a
       onClick={handleClick}
-      className="text-white p-2 hover:bg-slate-600 hover:bg-opacity-30 cursor-pointer"
+      className="p-2 m-2 rounded-full hover:bg-season hover:text-white hover:bg-opacity-30 cursor-pointer"  
     >
       {name}
     </a>

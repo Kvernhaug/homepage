@@ -10,7 +10,7 @@ export default function BasicContainer({
   className = "",
 }: BasicContainerProps) {
   return (
-    <div className="flex flex-col bg-neutral-100 bg-opacity-70 rounded-2xl p-5">
+    <div className="flex flex-col bg-neutral-100 bg-opacity-0 rounded-2xl p-5">
       {children}
     </div>
   );

@@ -9,27 +9,27 @@
     --text-season: #000000;
   }
   html[season-theme='autumn'] {
-    --color-season: theme(colors.orange.600);
+    --color-season: theme(colors.orange.500);
     --color-season-transparent: rgba(234, 88, 12, 0.5);
-    --background-color: theme(colors.orange.800);
+    --background-color: theme(colors.slate.950);
   }
   html[season-theme='winter'] {
-    --color-season: theme(colors.sky.600);
+    --color-season: theme(colors.sky.500);
     --color-season-transparent: rgba(14, 165, 233, 0.5);
     --background-image: url('/images/backgrounds/tveitevannet-winter.jpg');
-    --background-color: theme(colors.sky.800);
+    --background-color: theme(colors.slate.950);
   }
   html[season-theme='spring'] {
-    --color-season: theme(colors.lime.600);
+    --color-season: theme(colors.lime.500);
     --color-season-transparent: rgba(101, 163, 13, 0.5);
     --background-image: url('/images/backgrounds/bg-spring.jpg');
-    --background-color: theme(colors.lime.800);
+    --background-color: theme(colors.slate.950);
   }
   html[season-theme='summer'] {
-    --color-season: theme(colors.yellow.400);
+    --color-season: theme(colors.yellow.300);
     --color-season-transparent: rgba(234, 179, 8, 0.5);
     --background-image: url('/images/backgrounds/bg-summer.jpg');
-    --background-color: theme(colors.yellow.600);
+    --background-color: theme(colors.slate.950);
   }
 }
 
@@ -46,7 +46,6 @@
 
 
 body {
-
   background-color: var(--background-color);
   background-size: cover; 
   color: var(--color-season);
