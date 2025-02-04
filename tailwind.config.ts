@@ -28,6 +28,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         text: "var(--text-color)",
         season: "var(--color-season)",
+        dark: "var(--color-season-dark)"
       },
     },
   },

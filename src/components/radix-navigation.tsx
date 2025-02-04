@@ -47,8 +47,8 @@ function NavItem({ name, dist }: NavItemsProps) {
   return (
     <a
       onClick={handleClick}
-      className={`p-2 m-2 rounded-full hover:bg-season hover:text-white cursor-pointer ${
-        isActive ? "bg-season text-white bg-opacity-30" : ""
+      className={`p-2 m-2 rounded-full hover:bg-season hover:text-dark cursor-pointer ${
+        isActive ? "bg-season text-dark" : "" // Styling for active navigation link
       }`}
     >
       {name}
