@@ -1,6 +1,6 @@
 "use client";
 import { getTheme } from "@/utils/helpers";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 export function Navigation() {
@@ -37,6 +37,8 @@ type NavItemsProps = {
 };
 function NavItem({ name, dist }: NavItemsProps) {
   const router = useRouter();
+  const pathName = usePathname();
+  const isActive = pathName === '/' + dist;
   function handleClick() {
     router.push(dist ?? "");
   }
@@ -45,7 +47,9 @@ function NavItem({ name, dist }: NavItemsProps) {
   return (
     <a
       onClick={handleClick}
-      className="p-2 m-2 rounded-full hover:bg-season hover:text-white hover:bg-opacity-30 cursor-pointer"  
+      className={`p-2 m-2 rounded-full hover:bg-season hover:text-white cursor-pointer ${
+        isActive ? "bg-season text-white bg-opacity-30" : ""
+      }`}
     >
       {name}
     </a>
