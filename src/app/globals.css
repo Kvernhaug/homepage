@@ -44,7 +44,7 @@
 
 
 body {
-  background-color: var(--color-season-dark);
+  background-color: var(--background-color);
   background-size: cover; 
   color: var(--color-season);
   font-family: Arial, Helvetica, sans-serif;
